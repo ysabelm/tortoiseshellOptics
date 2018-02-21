@@ -81,11 +81,73 @@ h1 {
 	font-weight: bold;
 }
 
+@media only screen and (max-width: 1024px) {
+	header {
+		height: 22rem;
+		padding-top: 0;
+	}
+
+	nav.container {
+		max-width: 100%;
+	}
+
+	.headline {
+		padding: 0.75rem 4rem;
+		margin-top: 5rem;
+		margin-right: 2rem;
+	}
+
+	.headline h1 {
+		font-size: 1.33rem;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.menu ul {
+		display: none;
+	}
+
+	.menu ul.truncated-menu {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	header div span {
+		display: none;
+	}
+
+	header {
+		background-position: 20%;
+		height: 17rem;
+	}
+
+	.headline {
+		width: 100%;
+		padding: 0 1rem;
+		margin: 9rem auto 0 auto;
+		text-align: center;
+	}
+
+	.headline h1 {
+		font-size: 1rem;
+	}
+}
+
 /* Main Section Style */
 
 .main {
 	display: flex;
 	justify-content: center;
+}
+
+@media only screen and (max-width: 560px) {
+	.main {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 3rem;
+	}
 }
 
 /* Service Section Style */
@@ -110,6 +172,14 @@ h1 {
 	width: 3.5rem;
 }
 
+@media only screen and (max-width: 560px) {
+	.service {
+		height: auto;
+		margin: .77rem;
+		font-size: .77rem;
+	}
+}
+
 /* Information Section*/
 
 .info {
@@ -130,6 +200,24 @@ h1 {
 	color: white;
 }
 
+@media only screen and (max-width: 560px) {
+	.info {
+		width: 100%;
+	}
+
+	.info .title {
+		width: 100%;
+		max-width: none;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.info p {
+		padding: 1rem;
+		font-size: .77rem;
+	}
+}
+
 /* Footer*/
 
 footer {
@@ -143,4 +231,14 @@ footer img {
 	height: 1.5rem;
 	margin-left: 2rem;
 	margin-right: 1rem;
+}
+
+@media only screen and (max-width: 560px){
+	footer {
+		justify-content: center;
+	}
+
+	footer h2 {
+		display: none;
+	}
 }
