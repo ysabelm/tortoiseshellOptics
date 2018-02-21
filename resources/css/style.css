@@ -1,0 +1,146 @@
+/* Universal Styles */
+
+html {
+	font-family: "Helvetica", sans-serif;
+	font-size: 18px;
+	background-color: white;
+}
+
+body {
+	line-height: 1.4;
+}
+
+.container {
+	margin: auto;
+	max-width: 960px;
+}
+
+.main-banner {
+	display: flex;
+}
+
+/* Header Style */
+
+header {
+	background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 30rem;
+	padding-top: 1rem;
+}
+
+nav {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+	background-color: cadetblue;
+	color: white;
+}
+
+nav div {
+	display: flex;
+	align-items: center;
+}
+
+nav img {
+	height: 1.5rem;
+	margin-left: 2rem;
+	margin-right: 1rem;
+}
+
+nav ul {
+	margin-right: 1rem;
+}
+
+nav li {
+	display: inline;
+	padding: 0 1rem;
+}
+
+.truncated-menu {
+	display: none;
+}
+
+header .main-banner {
+	justify-content: flex-end;
+}
+
+.headline {
+	display: inline-block;
+	padding: 1.5rem 5rem;
+	margin-top: 10rem;
+	margin-right: -2rem;
+	background-color: white;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 1.2rem;
+	font-weight: bold;
+}
+
+/* Main Section Style */
+
+.main {
+	display: flex;
+	justify-content: center;
+}
+
+/* Service Section Style */
+
+.service {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 5rem;
+	height: 8rem;
+	margin: 3rem;
+	text-align: center;
+}
+
+.service img {
+	width: 5rem;
+	margin-bottom: 1rem;
+}
+
+.service img.paper-icon {
+	width: 3.5rem;
+}
+
+/* Information Section*/
+
+.info {
+	width: 35%;
+	margin-right: 5%;
+	margin-bottom: 5rem;
+}
+
+.info p {
+	padding: 1rem 0;
+}
+
+.title {
+	max-width: 10rem;
+	padding: 0.5rem 1.25rem;
+	background-color: cadetblue;
+	font-weight: bold;
+	color: white;
+}
+
+/* Footer*/
+
+footer {
+	display: flex;
+	align-items: center;
+	background-color: azure;
+	padding: 4rem 2rem;
+}
+
+footer img {
+	height: 1.5rem;
+	margin-left: 2rem;
+	margin-right: 1rem;
+}
